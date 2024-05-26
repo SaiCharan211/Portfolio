@@ -1,0 +1,36 @@
+*{
+    color: white;
+    font-weight: bold;
+}
+a {
+    color: #f6f6f6;
+    text-decoration: none;
+    padding: 0 20px;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    color:#f6f6f6;
+    background-color: rgb(184, 248, 58);
+    transition: 0.2s linear;
+  }
+  
+  a:hover:after {
+    width: 100%;
+  }
+  .item:hover{
+    color:white;
+  }
+
+  .navItems{
+
+    margin-right: 3em;
+  }

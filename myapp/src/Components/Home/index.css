@@ -1,0 +1,27 @@
+.bg-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+img{
+  width:60%;
+}
+
+h1{
+  color: black;
+  font-size:3em;
+  font-weight: bold;
+}
+
+.footer-icons {
+  margin-top: 0.1em !important;
+  margin-bottom: 0.1em !important;
+  padding: 0 !important;
+}
+.social-icons {
+  display: inline-block !important;
+  padding-right: px;
+  padding-left: px;
+}
