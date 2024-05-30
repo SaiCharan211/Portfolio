@@ -1,14 +1,27 @@
 *{
     color: white;
     font-weight: bold;
+    
+}
+.containerNavbar{
+  width: 100%;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 4px;
+  background-color: #1b1a1a;
+  color: rgb(254, 254, 254);
+  font-size: 0.9rem;
+  box-shadow: 0 4px 8px 0 rgba(241, 232, 232, 0.2), 0 6px 20px 0 rgba(253, 253, 253, 0.19);
+  
 }
 a {
-    color: #f6f6f6;
+    color: #d4d0d0;
+    font-size:larger;
     text-decoration: none;
     padding: 0 20px;
     letter-spacing: 0.5px;
     position: relative;
     transition: 0.2s;
+    margin: 10px;
   }
   
   a::after {
@@ -25,6 +38,7 @@ a {
   
   a:hover:after {
     width: 100%;
+    color:white;
   }
   .item:hover{
     color:white;

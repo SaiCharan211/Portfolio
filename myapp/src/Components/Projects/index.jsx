@@ -46,8 +46,8 @@ function Project() {
         <div className="container d-flex align-items-center justify-content-center position-relative flex-wrap">
             <div className="row">
                 
-                    {data.map((i)=>(
-                        <Card style={{ width: '20rem'}} className='m-3'>
+                    {data.map((i,id)=>(
+                        <Card style={{ width: '20rem'}} className='m-3' key={id}>
                         <Card.Img variant="top" src={i.url} width={100} className='p-0' />
                         <Card.Body>
                             <Card.Title>{i.title}</Card.Title>

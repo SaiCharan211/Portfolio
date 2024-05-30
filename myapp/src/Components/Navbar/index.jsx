@@ -1,29 +1,17 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React from 'react'
+import {Link} from 'react-router-dom'
 import './index.css'
 function NavbarItem() {
   return (
-    <Navbar expand="lg" className="bg-body-dark" bg="dark" data-bs-theme="dark">
-      <Container fluid>
-        <Navbar.Brand href="/">Portfolio</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-             <Nav.Link href="/" className='navItems'><i className="fa-solid fa-house "></i> Home</Nav.Link>
-            <Nav.Link href="/about" className='navItems'><i className="fa-solid fa-address-card"></i> About</Nav.Link>
-            <Nav.Link href="/project" className='navItems'><i className="fa-solid fa-diagram-project"></i> Projects</Nav.Link>
-            <Nav.Link href="skills" className='navItems'><i className="fa-solid fa-pen-ruler"></i> Skills</Nav.Link>
-            <Nav.Link href="resume" className='navItems'><i className="fa-solid fa-pen-ruler"></i> Resume</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
+    <div  className="bg-body-dark d-flex flex-row containerNavbar mb-1"   >
+        <Link to="/" className='a'>Portfolio</Link>
+        <Link to='/' className=' a' > <i className="fa-solid fa-house " ></i>Home</Link>
+        <Link to='/about' className=' a'> <i className="fa-solid fa-address-card"  ></i>About</Link>
+        <Link to='/project' className=' a'> <i className="fa-solid fa-diagram-project"  ></i> Projects</Link>
+        <Link to='/skills' className=' a'><i className="fa-solid fa-pen-ruler"  ></i>Skills</Link>
+        <Link to='/resume' className=' a'><i className="fa-solid fa-file"  ></i> Resume</Link>
+    </div>
+  )
 }
 
-export default NavbarItem;
+export default NavbarItem

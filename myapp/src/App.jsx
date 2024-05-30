@@ -13,12 +13,11 @@ import ResumeNew from './Components/New/ResumeNew';
 function App() {
   return (
     <div className='con'>
-      <NavbarItem/>
       <BrowserRouter>
+      <NavbarItem/>
         <Routes>
            <Route path='/' element={<Home/>}/>
            <Route path='/about' element={<About/>}/>
-           
            <Route path='/project' element={<Project/>}/>
            <Route path='/skills' element={<Skills/>}/>
            <Route path='/resume' element={<ResumeNew/>}/>
