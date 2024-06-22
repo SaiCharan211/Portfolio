@@ -66,7 +66,7 @@ function Project() {
                             {i.content}
                             <br/>
                             <br />
-                            <p style={{color:"red",textDecoration:"underline",fontSize:"15px"}}>{i.main ? " Switch to desktop mode on mobile devices.":null}</p>
+                            <p style={{color:"red",textDecoration:"underline",fontSize:"15px"}}>{i.main ? "Note: Switch to desktop mode on mobile devices.":null}</p>
                             <Button variant="primary" href={i.github} target="_blank" className='mt-0 m-3 '>Github</Button>
                             <Button variant="danger" href={i.deployLink} target="_blank" className='mt-0 m-3 '>Go to website</Button>
                             </Card.Text>
