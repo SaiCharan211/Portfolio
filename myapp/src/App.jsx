@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './Components/Home/index';
@@ -11,6 +11,11 @@ import './App.css'
 import ResumeNew from './Components/New/ResumeNew';
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className='con'>
       <BrowserRouter>

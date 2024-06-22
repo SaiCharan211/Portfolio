@@ -1,0 +1,188 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.navbarItem {
+  background-color: #211f1f;
+  overflow: hidden;
+  
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.navbar-brandItem {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  line-height: 60px;
+  float: left;
+}
+
+.navbar-toggler {
+  display: none;
+  float: right;
+  font-size: 1.5em;
+  line-height: 60px;
+  cursor: pointer;
+  color: #fff;
+  background: none;
+  border: none;
+}
+
+.navbar-collapseItem {
+  float: right;
+}
+
+.navbar-navItem {
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-itemBar {
+  float: left;
+}
+
+.nav-linkItem {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+  line-height: 60px;
+}
+
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  content: ' ▼';
+  font-size: 0.8em;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #292727;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-item {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #575757;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background-color: #575757;
+  margin: 5px 0;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+    
+  }
+
+  .navbar-collapseItem {
+    display: none;
+    float: none;
+    clear: both;
+    width: 100%;
+
+  
+  }
+
+  .navbar-navItem {
+    flex-direction: column;
+  }
+
+  .navbar-navItem.show {
+    display: flex;
+    
+  }
+
+  .nav-itemBar {
+    float: none;
+  }
+
+  .nav-linkItem {
+    text-align: center;
+    padding: 10px 0;
+    line-height: normal;
+  }
+
+  .navbar-collapseItem.show {
+    display: block;
+  }
+}
+
+
+/* Extra */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.navNew {
+  background-color: #1f1d1d;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px 30px;
+}
+.a {
+  color: #a0a0a0;
+  text-decoration: none;
+  padding: 0 20px;
+  letter-spacing: 1.0px;
+  position: relative;
+  transition: 0.2s;
+}
+
+.a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(181, 255, 34);
+  transition: 0.3s linear;
+}
+
+.a:hover {
+  color: #fff;
+}
+.a:hover:after {
+  width: 100%;
+}

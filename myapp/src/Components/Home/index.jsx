@@ -13,7 +13,7 @@ function Home() {
         <div className='col-lg-5 col-md-12'>
           <h1>Hi There!</h1>
           <h1>IAM SAI CHARAN</h1>
-          <div className='d-flex flex-column'><Type/>
+          <div className='d-flex flex-column' ><Type/>
           <Contact/></div>
           
         </div>
