@@ -39,7 +39,7 @@ function Project() {
          main:true,
          title:"Login and Registration page",
          github:"https://github.com/SaiCharan211/Login-and-Registration",
-         deployLink:"https://myapp-nine-sage.vercel.app/",
+         deployLink:"https://client-mern-stack.vercel.app/",
          content:"Login and Signup pages is where A signup page enables users and organizations to independently register and gain access to your system. Registered user data stored in mangodb database locally ",
         },
         {
